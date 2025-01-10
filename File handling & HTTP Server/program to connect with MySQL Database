@@ -1,0 +1,21 @@
+var mysql = require('mysql');
+
+var conn = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'MCA'
+});
+
+conn.connect(function(error) {
+    if (error) throw error;
+    console.log("Connected!");
+});
+
+// CREATE DATABASE MCA;
+// CREATE USER 'root'@'localhost' IDENTIFIED BY 'root123';
+//CREATE USER failed for 'root'@'localhost'
+//GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost';
+//FLUSH PRIVILEGES;
+
+//To perform in Database

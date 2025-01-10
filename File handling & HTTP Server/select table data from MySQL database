@@ -1,0 +1,11 @@
+var mysql = require('mysql'); 
+var conn = mysql.createConnection({ 
+host: 'localhost', 
+user:'root', 
+password: '', 
+database:'MCA'}); 
+conn.connect( function(error){ 
+if(error) throw error; 
+conn.query("select * from emp",function(error,result){ 
+if(error) throw error; 
+console.log(result);});}); 

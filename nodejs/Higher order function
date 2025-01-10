@@ -1,0 +1,15 @@
+function operate(a, b, operation) { 
+return operation(a, b); 
+} 
+function add(x, y) { 
+return x + y; 
+} 
+function subtract(x, y) { 
+return x - y; 
+} 
+const num1 = 20; 
+const num2 = 10; 
+const sum = operate(num1, num2, add); 
+const difference = operate(num1, num2, subtract); 
+console.log(`Sum: ${sum}`); 
+console.log(`Difference: ${difference}`); 
